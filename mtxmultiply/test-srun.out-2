@@ -1,0 +1,42 @@
+SLURM_JOB_ID=3229682
+SLURM_JOB_NODELIST=k08n41s01
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/3229682
+working directory = /gpfs/scratch/weiweiga/practice/HPC2/mtxmultiply
+
+Currently Loaded Modules:
+  1) lmod/5.8   2) StdEnv   3) intel/13.1   4) mkl/11.2   5) intel-mpi/5.0.2
+
+
+
+Launch helloworld with srun
+NPROCS=1
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.010000 
+Allocating time:     0.000000 
+Calculating time:     0.920000 
+Allocating time:     0.020000 
+Calculating time:    11.640000 
+Allocating time:     0.130000 
+Calculating time:   121.950000 
+Allocating time:     0.290000 
+Calculating time:   195.790000 
+Allocating time:     0.530000 
+Calculating time:  1003.030000 
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.010000 
+Allocating time:     0.000000 
+Calculating time:     0.930000 
+Allocating time:     0.020000 
+Calculating time:    11.700000 
+Allocating time:     0.130000 
+Calculating time:   125.740000 
+Allocating time:     0.300000 
+Calculating time:   575.100000 
+Allocating time:     0.540000 
+Calculating time:   444.280000 
+All Done!

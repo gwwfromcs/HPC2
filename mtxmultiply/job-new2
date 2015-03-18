@@ -1,0 +1,65 @@
+#!/bin/sh
+#SBATCH --partition=debug
+#SBATCH --time=00:59:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --job-name="HPC-hw2"
+#SBATCH --output=test-srun2.out
+#SBATCH --mail-user=weiweiga@buffalo.edu
+#SBATCH --mem=48000
+
+echo "SLURM_JOB_ID="$SLURM_JOB_ID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+echo "SLURMTMPDIR="$SLURMTMPDIR
+
+cd $SLURM_SUBMIT_DIR
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+module load intel/13.1 mkl/11.2 intel-mpi/5.0.2
+module list
+ulimit -s unlimited
+#
+
+echo "Launch helloworld with srun"
+NPROCS=`srun --nodes=${SLURM_NNODES} bash -c 'hostname' |wc -l`
+echo NPROCS=$NPROCS
+export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
+
+./mtxmul_mkl 100
+./mtxmul_mkl 200
+./mtxmul_mkl 500
+./mtxmul_mkl 1000
+./mtxmul_mkl 2000
+./mtxmul_mkl 3000
+./mtxmul_mkl 4000
+./mtxmul_mkl 5000
+./mtxmul_mkl 6000
+./mtxmul_mkl 7000
+./mtxmul_mkl 8000
+
+./mtxmul_mkl 100
+./mtxmul_mkl 200
+./mtxmul_mkl 500
+./mtxmul_mkl 1000
+./mtxmul_mkl 2000
+./mtxmul_mkl 3000
+./mtxmul_mkl 4000
+./mtxmul_mkl 5000
+./mtxmul_mkl 6000
+./mtxmul_mkl 7000
+./mtxmul_mkl 8000
+
+./mtxmul_mkl 100
+./mtxmul_mkl 200
+./mtxmul_mkl 500
+./mtxmul_mkl 1000
+./mtxmul_mkl 2000
+./mtxmul_mkl 3000
+./mtxmul_mkl 4000
+./mtxmul_mkl 5000
+./mtxmul_mkl 6000
+./mtxmul_mkl 7000
+./mtxmul_mkl 8000
+
+echo "All Done!"

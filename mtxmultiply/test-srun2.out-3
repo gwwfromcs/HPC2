@@ -1,0 +1,80 @@
+SLURM_JOB_ID=3229720
+SLURM_JOB_NODELIST=k08n41s02
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/3229720
+working directory = /gpfs/scratch/weiweiga/practice/HPC2/mtxmultiply
+
+Currently Loaded Modules:
+  1) lmod/5.8   2) StdEnv   3) intel/13.1   4) mkl/11.2   5) intel-mpi/5.0.2
+
+
+
+Launch helloworld with srun
+NPROCS=1
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.030000 
+Allocating time:     0.020000 
+Calculating time:     0.230000 
+Allocating time:     0.100000 
+Calculating time:     2.020000 
+Allocating time:     0.250000 
+Calculating time:     6.870000 
+Allocating time:     0.450000 
+Calculating time:    14.570000 
+Allocating time:     0.710000 
+Calculating time:    27.420000 
+Allocating time:     1.020000 
+Calculating time:    47.780000 
+Allocating time:     1.400000 
+Calculating time:    75.070000 
+Allocating time:     1.830000 
+Calculating time:   111.700000 
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.030000 
+Allocating time:     0.020000 
+Calculating time:     0.220000 
+Allocating time:     0.110000 
+Calculating time:     2.460000 
+Allocating time:     0.250000 
+Calculating time:     6.850000 
+Allocating time:     0.450000 
+Calculating time:    14.570000 
+Allocating time:     0.710000 
+Calculating time:    27.420000 
+Allocating time:     1.020000 
+Calculating time:    47.750000 
+Allocating time:     1.400000 
+Calculating time:    75.300000 
+Allocating time:     1.820000 
+Calculating time:   111.280000 
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.000000 
+Allocating time:     0.000000 
+Calculating time:     0.030000 
+Allocating time:     0.020000 
+Calculating time:     0.220000 
+Allocating time:     0.110000 
+Calculating time:     2.690000 
+Allocating time:     0.250000 
+Calculating time:     6.870000 
+Allocating time:     0.450000 
+Calculating time:    14.510000 
+Allocating time:     0.710000 
+Calculating time:    27.440000 
+Allocating time:     1.020000 
+Calculating time:    47.820000 
+Allocating time:     1.390000 
+Calculating time:    75.290000 
+Allocating time:     1.830000 
+Calculating time:   111.500000 
+All Done!
